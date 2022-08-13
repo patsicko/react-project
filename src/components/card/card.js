@@ -1,17 +1,19 @@
 import React from "react";
-import styles from "../list-users/list-users.module.css";
-
+import styles from "../../app.module.css";
 const Card=(props)=>{
+     
 
 
     return(
-
-        <div className={`${styles.card} ${styles.body}`}>
-            <img src={props.url}/>
-           
-    
-      
-        </div>
+        <>
+      <div className={styles.card}>
+     <img src={props.src} alt=""/>
+     
+     <button onClick={()=>props.handleAction ? props.handleAction(props.name): {}} >{props.button}</button> <br/>
+     
+      </div>
+     
+        </>
     );
 }
 

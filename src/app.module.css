@@ -1,0 +1,38 @@
+
+.main{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ 
+   
+    height: 800px;
+    padding: 40px;
+  
+  }
+  
+  .list{
+    background-color: #f5f6f5;
+    padding: 10px;
+    height:auto;
+  }
+  
+  .alert{
+ background-color: #f5f6f5;
+    height:auto;
+    padding: 10px;
+  }
+  .card{
+    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.19);
+    height: 150px;
+    width: 450px;
+    background-color: #ffffff;
+    margin-top: 30px;
+   
+
+  }
+img{
+  height: 110px;
+  width: 100px;
+  border-radius: 50%;
+}

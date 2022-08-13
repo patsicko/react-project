@@ -1,37 +1,35 @@
+import React from "react";
+ import ListUsers from "./components/list-users/list-users";
+import styles from "./app.module.css";
+ import Alert from "./components/alert-users/alert";
 
 
+const App=()=>{
 
-import { Fragment } from 'react';
-import Users from './components/list-users/list-users';
-import Alert from "./components/alert-users/alert"
 
-function App(props) {
-  return (
-   <Fragment>
-  <div className='all'>
-  <div className='list'>
-    list users
-    <Users/>
-    <Users/>
-    <Users/>
-    <Users/>
-    </div>
- 
-  <div className='alert'>
-    alert users
+  return(
+    <>
+     <div className={styles.main} >
 
-    <Alert name="Peter" url="https://random.responsiveimages.io/140/140"/>
-    <Alert name="John" url="https://random.responsiveimages.io/140/140"/>
-    <Alert name="Danny" url="https://random.responsiveimages.io/140/140"/>
-    <Alert name="Smith" url="https://random.responsiveimages.io/140/140"/>
-    <Alert name="Dan" url="https://random.responsiveimages.io/140/140"/>
-    <Alert name="Sam" url="https://random.responsiveimages.io/140/140"/>
+     <div className={styles.list}>
+      
+      <ListUsers/> 
+      </div>
+
+     <div className={styles.alert}>
+     <Alert/>
+     </div> 
     
 
-  </div>
-  </div>
-   </Fragment>
+     </div>
+ 
+  
+    </>
+
+    
   );
+
+
 }
 
 export default App;
